@@ -7,6 +7,7 @@ class Profile(models.Model):
     description = models.TextField(blank=True)
     age = models.IntegerField(null=True, blank=True)
 
+
     def __str__(self):
         return self.user.username
 
